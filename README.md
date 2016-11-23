@@ -1,5 +1,5 @@
-# magento2-samples
-Code samples for Magento developers.
+# Magento2 samples
+Code samples for Magento2 developers.
 
 ## Override templates
 * [Override the cart item template](https://github.com/karliuka/m2.samples/tree/master/app/code/Faonni/OverrideCartItemTemplate)
