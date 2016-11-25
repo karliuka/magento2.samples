@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Faonni
+ *  
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the Open Software License (OSL 3.0)
+ * that is bundled with this package in the file LICENSE.txt.
+ * It is also available through the world-wide-web at this URL:
+ * http://opensource.org/licenses/osl-3.0.php
+ *
+ *
+ * DISCLAIMER
+ *
+ * Do not edit or add to this file if you wish to upgrade module to newer
+ * versions in the future.
+ * 
+ * @package     Faonni_AddCustomLayout
+ * @copyright   Copyright (c) 2016 Karliuka Vitalii(karliuka.vitalii@gmail.com) 
+ * @license     http://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)
+ */
+-->
+<layout xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_layout.xsd">
+    <container name="root">
+        <container name="after.body.start" as="after.body.start" before="-" label="Page Top"/>
+        <container name="page.wrapper" as="page_wrapper" htmlTag="div" htmlClass="page-wrapper">
+            <container name="global.notices" as="global_notices" before="-"/>
+            <container name="header.container" as="header_container" label="Page Header Container"  htmlTag="header" htmlClass="page-header" before="main.content"/>
+            <container name="page.top" as="page_top" label="After Page Header" after="header.container"/>
+            <container name="main.content" htmlTag="main" htmlId="maincontent" htmlClass="page-main">
+                <container name="columns.top" label="Before Main Columns"/>
+                <container name="columns" htmlTag="div" htmlClass="columns">
+                    <container name="main" label="Main Content Container" htmlTag="div" htmlClass="column main"/>
+                </container>
+            </container>
+            <container name="page.bottom.container" as="page_bottom_container" label="Before Page Footer Container" after="main.content" htmlTag="div" htmlClass="page-bottom"/>
+            <container name="footer-container" as="footer" before="before.body.end" label="Page Footer Container" htmlTag="footer" htmlClass="page-footer" />
+            <container name="before.body.end" as="before_body_end" after="-" label="Page Bottom"/>
+        </container>
+    </container>
+</layout>
