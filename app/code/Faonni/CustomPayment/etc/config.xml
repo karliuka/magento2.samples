@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Faonni
+ *  
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the Open Software License (OSL 3.0)
+ * that is bundled with this package in the file LICENSE.txt.
+ * It is also available through the world-wide-web at this URL:
+ * http://opensource.org/licenses/osl-3.0.php
+ *
+ *
+ * DISCLAIMER
+ *
+ * Do not edit or add to this file if you wish to upgrade module to newer
+ * versions in the future.
+ * 
+ * @package     Faonni_CustomPayment
+ * @copyright   Copyright (c) 2016 Karliuka Vitalii(karliuka.vitalii@gmail.com) 
+ * @license     http://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Store:etc/config.xsd">
+    <default>
+        <payment>
+            <faonni_custom>
+                <active>1</active>
+                <model>Faonni\CustomPayment\Model\Payment</model>
+                <title>Custom</title>
+                <payment_action>authorize_capture</payment_action>
+                <visible_on_cart>1</visible_on_cart>
+                <order_status>pending_payment</order_status>
+                <sort_order>100</sort_order>
+                <allowspecific>0</allowspecific>
+            </faonni_custom>
+        </payment>
+    </default>
+</config> 
