@@ -10,6 +10,7 @@ Code samples for Magento2 developers.
 * [Add custom layout](https://github.com/karliuka/m2.samples/tree/master/app/code/Faonni/AddCustomLayout)
 
 ## Menu and links
+* [Custom top menu link](https://github.com/karliuka/m2.samples/tree/master/app/code/Faonni/AddTopMenuLink)
 * [Custom footer link](https://github.com/karliuka/m2.samples/tree/master/app/code/Faonni/AddFooterLink)
 
 ## Mass Action
