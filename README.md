@@ -12,6 +12,7 @@ Code samples for Magento2 developers.
 ## Menu and links
 * [Custom top menu link](https://github.com/karliuka/m2.samples/tree/master/app/code/Faonni/AddTopMenuLink)
 * [Custom footer link](https://github.com/karliuka/m2.samples/tree/master/app/code/Faonni/AddFooterLink)
+* [Custom account menu link](https://github.com/karliuka/m2.samples/tree/master/app/code/Faonni/AddAccountMenuLink)
 
 ## Mass Action
 * [Add mass action to order grid](https://github.com/karliuka/m2.samples/tree/master/app/code/Faonni/MassActionOrderGrid)
