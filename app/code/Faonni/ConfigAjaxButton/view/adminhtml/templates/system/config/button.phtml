@@ -1,0 +1,66 @@
+<?php
+/**
+ * Faonni
+ *  
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the Open Software License (OSL 3.0)
+ * that is bundled with this package in the file LICENSE.txt.
+ * It is also available through the world-wide-web at this URL:
+ * http://opensource.org/licenses/osl-3.0.php
+ *
+ *
+ * DISCLAIMER
+ *
+ * Do not edit or add to this file if you wish to upgrade module to newer
+ * versions in the future.
+ * 
+ * @package     Faonni_ConfigAjaxButton
+ * @copyright   Copyright (c) 2016 Karliuka Vitalii(karliuka.vitalii@gmail.com) 
+ * @license     http://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)
+ */
+?>
+<script>
+require(['prototype'], function(){
+
+//<![CDATA[
+    function validateAjaxButton() {
+        var validationMessage = $('ajax-button-validation-result');
+
+        params = {
+			// add custom params
+        };
+
+        new Ajax.Request('<?php /* @escapeNotVerified */ echo $block->getAjaxUrl() ?>', {
+            parameters: params,
+            onSuccess: function(response) {
+                var result = '<?php /* @escapeNotVerified */ echo __('Error during Ajax Button verification.') ?>';
+                try {
+                    if (response.responseText.isJSON()) {
+                        response = response.responseText.evalJSON();
+                        result = response.message;
+                    }
+                    if (response.valid == 1) {
+                        validationMessage.removeClassName('hidden').addClassName('success')
+                    } else {
+                        validationMessage.removeClassName('hidden').addClassName('error')
+                    }
+                } catch (e) {
+                    validationMessage.removeClassName('hidden').addClassName('error')
+                }
+                validationMessage.update(result);
+            }
+        });
+    }
+
+    window.validateAjaxButton = validateAjaxButton;
+//]]>
+
+});
+</script>
+<div class="actions actions-validate-ajax-button">
+    <div id="ajax-button-validation-result" class="message-validation hidden"></div>
+    <button onclick="javascript:validateAjaxButton(); return false;" class="action-validate-ajax-button" type="button" id="<?php echo $block->getHtmlId() ?>">
+        <span><?php echo $block->escapeHtml($block->getButtonLabel()) ?></span>
+    </button>
+</div>
