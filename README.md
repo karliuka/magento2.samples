@@ -24,6 +24,7 @@ Code samples for Magento2 developers.
 
 ## Backend configuration section
 * [Ajax button](https://github.com/karliuka/m2.samples/tree/master/app/code/Faonni/ConfigAjaxButton)
+* [Dynamic Comment for a configuration field](https://github.com/karliuka/m2.samples/tree/master/app/code/Faonni/DynamicComment)
 
 ## Frontend themes
 * [Frontend themes (minimum)](https://github.com/karliuka/magento2.samples/tree/master/app/design/frontend/Faonni/%D1%81ypress)
