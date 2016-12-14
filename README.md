@@ -8,6 +8,7 @@ Code samples for Magento2 developers.
 ## Adds
 * [Add custom language](https://github.com/karliuka/m2.samples/tree/master/app/code/Faonni/AddCustomLanguage)
 * [Add custom layout](https://github.com/karliuka/m2.samples/tree/master/app/code/Faonni/AddCustomLayout)
+* [Add custom cache type](https://github.com/karliuka/m2.samples/tree/master/app/code/Faonni/CustomCache)
 * [Add custom tab to catalog product page](https://github.com/karliuka/m2.samples/tree/master/app/code/Faonni/ProductViewCustomTab)
 
 ## Menu and links
