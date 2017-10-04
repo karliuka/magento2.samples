@@ -1,4 +1,5 @@
 # Magento2 samples
+
 Code samples for Magento2 developers.
 
 ## Override templates
