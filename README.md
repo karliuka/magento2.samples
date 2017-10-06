@@ -32,5 +32,8 @@ Code samples for Magento2 developers.
 ## Logs
 * [SQL](https://github.com/karliuka/m2.samples/tree/master/app/code/Faonni/LogSql)
 
+## Alternatives
+* [catalog_product_collection_load_before and etc events](https://github.com/karliuka/m2.samples/tree/master/app/code/Faonni/CollectionLoadBefore)
+
 
 
