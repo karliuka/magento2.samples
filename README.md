@@ -24,6 +24,7 @@ Code samples for Magento2 developers.
 
 ## Payment
 * [Custom payment method](https://github.com/karliuka/m2.samples/tree/master/app/code/Faonni/CustomPayment)
+* [Custom credit card type](https://github.com/karliuka/m2.samples/tree/master/app/code/Faonni/CustomCC)
 
 ## Backend configuration section
 * [Ajax button](https://github.com/karliuka/m2.samples/tree/master/app/code/Faonni/ConfigAjaxButton)
